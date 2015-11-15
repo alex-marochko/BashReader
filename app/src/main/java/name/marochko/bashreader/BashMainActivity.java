@@ -29,7 +29,7 @@ public class BashMainActivity extends AppCompatActivity {
 
     public void onButtonLoadClick(View v){
 
-        textViewTemp.setText(BashParser.getPlainText());
+        new BashParser(textViewTemp).execute();
 
     }
 }
