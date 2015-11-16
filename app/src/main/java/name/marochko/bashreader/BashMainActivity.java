@@ -1,7 +1,8 @@
 package name.marochko.bashreader;
 
 /*
-    Simple app to parse html.
+    Simple app to parse html from bash.im site (it contains funny quotes at russian language).
+
 */
 
 import android.support.v7.app.AppCompatActivity;
@@ -9,13 +10,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 
 
 public class BashMainActivity extends AppCompatActivity {
 
     private final static String LOG_TAG = "marinfo";
 
+//    Simplest interface: list and button to (re)load quotes from site.
     ListView listViewQuotes;
     Button buttonLoad;
 
@@ -30,7 +31,7 @@ public class BashMainActivity extends AppCompatActivity {
 
     public void onButtonLoadClick(View v){
 
+//        creating and starting an object of the AsyncTask-based parsing class
         new BashParser(listViewQuotes, this).execute();
-
     }
 }
