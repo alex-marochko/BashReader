@@ -24,7 +24,7 @@ public class BashParser extends AsyncTask<Void, Void, Void> {
     private final String LOG_TAG = "marinfo";
     private final String URL = "http://bash.im/random";
     private final int QUOTES_PER_PAGE = 50;
-    private final String TAG_TO_SELECT = "div.text";
+    private final String TAG_TO_SELECT = "div.text"; //in html it looks like <div class="text">
 
 //    other declarations
     private ListView listView;
