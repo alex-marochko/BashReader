@@ -55,7 +55,7 @@ public class SavePreferences {
         }
     }
 
-//
+
     public static String[] getStringArray(ListAdapter adapter){
         String[] a = new String[adapter.getCount()];
 
